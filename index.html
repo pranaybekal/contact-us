@@ -6,22 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="app.css">
+  
+  
 </head>
 <body>
     <div class="container">
         <h1>Contact us</h1>
         <div class="contactform"></div>
+        <form action="form.php" method="POST" onsubmit="validateform()">
             <div class="inputform">
-                <input type="text" placeholder="Fullname" title="fULLname" class="holder">
+                <input type="text" placeholder="Fullname" name="name" title="fULLname" class="holder" id="name">
             </div>
             <div class="inputform">
-                <input type="text" placeholder="Email" title="email" class="holder">
+                <input type="text" placeholder="Email" title="email" name="email" class="holder" id="email">
             </div> <div class="inputform">
-                <textarea  class="holder" placeholder="Message"></textarea>
+                <textarea  class="holder" name="message" placeholder="Message"></textarea>
             </div>
             <div class="btn">
                 <button class="button button2" type="submit">submit</button>
             </div>
+        </form>
     </div>
+    <script src="validation.js"></script>
 </body>
 </html>
