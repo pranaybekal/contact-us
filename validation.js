@@ -1,21 +1,19 @@
 
 function validateform(){  
   var name=document.getElementById('name').value;
-var email= document.getElementById('email').value;
+  var email= document.getElementById('email').value;
 
   
-if (name==null || name==""){  
-  alert("Name can't be blank");  
+  if (name==null || name==""){  
+    alert("Name can't be blank");
+    return false;
+  }
+  
+  if(email==null || email==""){
+    alert("Enter valid email address");
+    return false;
+  }
 
-
-}
-else if(email==null || email==""){
-
-alert("enter valid email address");
-
-
-}
-
-
+return true;
 }  
 
