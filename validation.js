@@ -5,7 +5,7 @@ function validateform(){
 
   
   if (name==null || name==""){  
-    alert("Name can't be blank");
+    alert("Name can't be blank!!!");
     return false;
   }
   
