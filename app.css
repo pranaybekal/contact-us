@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 * {
-    margin: 0px;
+    margin: 111px;
     padding: 0;
     box-sizing: border-box;
     outline: none;
@@ -11,6 +11,7 @@
 body {
     background-image: url(hello.jpeg);
     background-size: cover;
+    backgrond-color: black;
 }
 
 .container {
